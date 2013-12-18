@@ -5,11 +5,7 @@ $(document).ready(function(){
         var loc = stations[i].loc;
         name = stations[i].name;
         stationed.push('<a href="#" alt="' + name + '" title="' + name + 
-<<<<<<< HEAD
             '" data-i="' + i + '"><area shape="circle" coords="' + loc + '" /></a>');
-=======
-            '" data-i="' + i + '"><area shape="circle" coords="' + loc + '" nohref="nohref" /></a>');
->>>>>>> 790e25dd6fb5b02b3fca3db7c6f087d5897f08bc
         }
         return stationed.join('\n');
     }

@@ -19,11 +19,7 @@
             for(var i=0; i<stations.length; i++){
                 var loc = stations[i].loc;
                 var desc = "test description";
-<<<<<<< HEAD
                 $('#subway').append('<a hr<area shape="circle" coords="' + loc + 
-=======
-                $('#subway').append('<area shape="circle" coords="' + loc + 
->>>>>>> 790e25dd6fb5b02b3fca3db7c6f087d5897f08bc
                     '" href="#" data-i="' + i + '" />');
             }
             $('area').click(function(e){

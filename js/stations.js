@@ -1,10 +1,7 @@
 var bronx = "http://ninjastatus.com/last_stop/Bronx/";
 var manhattan = "http://ninjastatus.com/last_stop/Manhattan/";
-<<<<<<< HEAD
 var queens = "http://ninjastatus.com/last_stop/Queens/";
 var brooklyn = "http://ninjastatus.com/last_stop/Brooklyn/";
-=======
->>>>>>> 790e25dd6fb5b02b3fca3db7c6f087d5897f08bc
 var stations = [
 	// Bronx
     { loc: "674,978,24", name: "Van Condlandt/ 242 st.", imgName: [bronx + "242_street_van_courtland_park_1.jpg"]},
