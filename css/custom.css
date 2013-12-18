@@ -8,3 +8,7 @@
 		max-width: 100%;
 		width: auto;
 	}
+	header#head h1 {
+		color: rgba(255,255,255,.8);
+		font-size: 1em;
+	}
