@@ -12,7 +12,8 @@
 		color: rgba(255,255,255,.8);
 		font-size: 2em;
 		text-align: center;
-		position: absolute;
+		position: fixed;
 		top: 1em;
+		padding: 0 auto;
 		margin: 0 auto;
 	}
