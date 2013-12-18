@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>NYC Subway Photo Map</title>
-    <script text/javascript src="js/stations.min.js"></script>
-    <script text/javascript src="js/jquery-1.10.2.min.js"></script>
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
-    <script text/javascript src="js/jquery.prettyPhoto.js"></script>
-    <script text/javascript src="js/jquery.rwdImageMaps.min.js"></script>
-    <script text/javascript src="js/picMap.min.js"></script>
-  </head>
-  <body>
-  <header id="head">
-    <h1>Click any point on the map to see photo(s) of that station</h1>
-  </header>
-    <main>      
-    <section id="contain-www">
-    <img id="mainmap" src="images/map_seamlessl12.jpg" width="3072" height="4608" border="0" usemap="#subway" />
-    <map id="subway" name="subway">
-      <!-- picMap.js inserts points here -->
-    </map>
-    </section>
-    </main>
-  </body>
+<head>
+<meta charset=utf-8>
+<title>NYC Subway Photo Map</title>
+<script text/javascript src="js/stations.min.js"></script>
+<script text/javascript src="js/jquery-1.10.2.min.js"></script>
+<link rel=stylesheet href="css/prettyPhoto.css" type="text/css"/>
+<script text/javascript src="js/jquery.prettyPhoto.js"></script>
+<script text/javascript src="js/jquery.rwdImageMaps.min.js"></script>
+</head>
+<body>
+<header id=head>
+<h1>Click any point on the map to see photo(s) of that station</h1>
+</header>
+<main>
+<section id=contain-www>
+<img id=mainmap src="images/map_seamlessl12.jpg" width=3072 height=4608 border=0 usemap="#subway"/>
+<map id=subway name=subway>
+</map>
+</section>
+</main>
+</body>
+<script text/javascript>$(document).ready(function(){function loopIt(stations){var stationed=[];for(var i=0;i<stations.length;i++){var loc=stations[i].loc;name=stations[i].name;stationed.push('<a href="#" alt="'+name+'" title="'+name+'" data-i="'+i+'"><area shape="circle" coords="'+loc+'" /></a>');}
+return stationed.join('\n');}
+$('#subway').append(loopIt(stations));$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false});$('img[usemap]').rwdImageMaps();$('a').on('click',function(e){e.preventDefault();var ib=$(this).data('i');name=stations[ib].name;imgs=stations[ib].imgName;desc=name+' - Lines running to this stop: '+stations[ib].line;$.prettyPhoto.open(imgs,name,desc);});})</script>
 </html>
