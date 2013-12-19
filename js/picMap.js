@@ -20,7 +20,7 @@ $(document).ready(function(){
         var desc = [];
         for(var i=0; i<imgs.length; i++){
             name.push(stations[ib].name);
-            desc.push(name[0] + ' - Lines running to this stop: ' + stations[ib].line);
+            desc.push(name[0] + ' - MTA Lines: ' + stations[ib].line);
         }
         $.prettyPhoto.open(imgs,name,desc);
     });
