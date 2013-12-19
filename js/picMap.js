@@ -12,6 +12,7 @@ jQuery(document).ready(function(){
     jQuery('#subway').append(loopIt(stations));
     jQuery("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
     jQuery('img[usemap]').rwdImageMaps();
+    jQuery('img#mainmap').addpowerzoom();
     jQuery('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
@@ -20,5 +21,4 @@ jQuery(document).ready(function(){
         desc = name + ' - Lines running to this stop: ' + stations[ib].line;
         jQuery.prettyPhoto.open(imgs,name,desc);
     });
-    jQuery('img#mainmap').addpowerzoom();
 })
