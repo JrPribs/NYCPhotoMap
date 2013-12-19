@@ -365,7 +365,7 @@ var stations = [
     { loc: "1355,2458,16", name: "Lorimer St", line: ["L", "G"], imgName: [brooklyn + "lorimer_street_l_g.jpg"]},
     { loc: "1248,2457,16", name: "Bedford Av", line: ["L"], imgName: [brooklyn + "bedford_avenue_l.jpg", brooklyn + "bedford_avenue_l-2.jpg"]},
     { loc: "1295,2432,16", name: "Nassau Av", line: ["G"], imgName: [brooklyn + "nassau_avenue_g.jpg", brooklyn + "nassau_avenue_g-2.jpg", brooklyn + "nassau_avenue_g-3.jpg", brooklyn + "nassau_avenue_g-4.jpg"]},
-    { loc: "1248,2397,16", name: "Greenpoint Av", line: ["G"], imgName: [brooklyn + "greenpoint_avenue_g.jpg", brooklyn + "greenpoint_avenue_g-2.jpg", brooklyn + "greenpoint_avenue_g-3.jpg", brooklyn + "greenpoint_avenue_g-4.jpg", brooklyn + "greenpoint_avenue_g-5.jpg" }
+    { loc: "1248,2397,16", name: "Greenpoint Av", line: ["G"], imgName: [brooklyn + "greenpoint_avenue_g.jpg", brooklyn + "greenpoint_avenue_g-2.jpg", brooklyn + "greenpoint_avenue_g-3.jpg", brooklyn + "greenpoint_avenue_g-4.jpg", brooklyn + "greenpoint_avenue_g-5.jpg"]}
 		// Queens
     { loc: "1246,1830,24", name: "Astoria Ditmars Blvd", imgName: ["ditmars_boulevard_n_q.jpg", bronx + "ditmars_boulevard_n_q-2.jpg", bronx + "ditmars_boulevard_n_q-3.jpg"]},
     { loc: "1242,1910,16", name: "Astoria Blvd", imgName: ["astoria_boulevard_n_q.jpg"]},
