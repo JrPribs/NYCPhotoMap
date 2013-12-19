@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
     function loopIt(stations) {
         var stationed = [];
         for(var i=0; i<stations.length; i++){
