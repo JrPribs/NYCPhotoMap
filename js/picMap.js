@@ -16,9 +16,9 @@ $(document).ready(function(){
     $('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
-        imgs = stations[ib].imgName;
-        name = [];
-        desc = [];
+        var imgs = stations[ib].imgName;
+        var name = [];
+        var desc = [];
         for(var i=0; i<imgs.length; i++){
             name.push(stations[ib].name);
             desc.push(name + ' - Lines running to this stop: ' + stations[ib].line);
