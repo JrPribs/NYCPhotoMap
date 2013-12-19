@@ -9,8 +9,7 @@ $(document).ready(function(){
         }
         return stationed.join('\n');
     }
-    var stopPoints = loopIt(stations);
-    $('#subway').append(stopPoints);
+    $('#subway').append(loopIt(stations));
     $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
     $('img[usemap]').rwdImageMaps();
     $('a').on('click', function(e){
