@@ -100,7 +100,7 @@ var stations = [
     { loc: "514,1659,15", name: "137 St/ City College", imgName: [manhattan + "137_street_city_college_1-3.jpg", manhattan + "137_street_city_college_1.jpg" ]},
     { loc: "904,1703,22", name: "125 St", imgName: [manhattan + "125_street_4_5_6-2.jpg", manhattan + "125_street_4_5_6.jpg" ]},
     { loc: "758,1714,19", name: "125 St", imgName: [manhattan + "125_street_2_3.jpg", manhattan + "125_street_2_3-2.jpg" ]},
-    { loc: "588,1711,18", name: "125 St", imgName: [manhattan + "125_street_a_c_b_d-3.jpg" "125_street_a_c_b_d-2.jpg", manhattan + "125_street_a_c_b_d.jpg" ]},
+    { loc: "588,1711,18", name: "125 St", imgName: [manhattan + "125_street_a_c_b_d-3.jpg", "125_street_a_c_b_d-2.jpg", manhattan + "125_street_a_c_b_d.jpg" ]},
     { loc: "515,1700,18", name: "125 St", imgName: [manhattan + "125_street_1.jpg" ]},
     { loc: "904,1749,18", name: "116 St", imgName: [manhattan + "116_street_6-2.jpg", manhattan + "116_street_6.jpg" ]},
     { loc: "763,1754,18", name: "116 St", imgName: [manhattan + "116_street_2_3-2.jpg", manhattan + "116_street_2_3.jpg" ]},
