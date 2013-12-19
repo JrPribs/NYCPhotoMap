@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+$(document).ready(function(){
     function loopIt(stations) {
         var stationed = [];
         for(var i=0; i<stations.length; i++){
@@ -9,16 +9,16 @@ jQuery(document).ready(function(){
         }
         return stationed.join('\n');
     }
-    jQuery('#subway').append(loopIt(stations));
-    jQuery("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
-    jQuery('img[usemap]').rwdImageMaps();
-    jQuery('img#mainmap').bezoom();
-    jQuery('a').on('click', function(e){
+    $('#subway').append(loopIt(stations));
+    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
+    $('img[usemap]').rwdImageMaps();
+    $('img').bezoom();
+    $('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
         name = stations[ib].name;
         imgs = stations[ib].imgName;
         desc = name + ' - Lines running to this stop: ' + stations[ib].line;
-        jQuery.prettyPhoto.open(imgs,name,desc);
+        $.prettyPhoto.open(imgs,name,desc);
     });
 })
