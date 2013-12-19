@@ -169,6 +169,6 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 .pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
 .pp_fade,.pp_gallery li.default a img{display:none}
 html body{font-family:Helvetica, Arial, sans-serif;background:#000;}
-footer{position:fixed;color:rgba(255,255,255,.9);font-size:.5em;text-align:center;}
+footer{position:fixed;bottom: 0;left:35%;color:rgba(255,255,255,.9);font-size:.5em;text-align:center;}
 img[usemap]{border:none;margin:0 auto;height:auto;max-width:100%;width:auto;}
 header#head h1{color:rgba(255,255,255,.8);font-size:2em;text-align:center;position:fixed;top:1em;left:9em;padding:0 auto;margin:0 auto;}

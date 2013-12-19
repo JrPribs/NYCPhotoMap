@@ -3,7 +3,7 @@ $(document).ready(function(){
         var stationed = [];
         for(var i=0; i<stations.length; i++){
         var loc = stations[i].loc;
-        name = stations[i].name;
+        var name = stations[i].name;
         stationed.push('<a href="#" alt="' + name + '" title="' + name + 
             '" data-i="' + i + '"><area shape="circle" coords="' + loc + '" /></a>');
         }
