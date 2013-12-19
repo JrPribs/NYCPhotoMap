@@ -16,10 +16,11 @@ $(document).ready(function(){
         e.preventDefault();
         var ib = $(this).data('i');
         imgs = stations[ib].imgName;
-        var name = stations[ib].name;
+        var name = [];
         var desc = [];
         for(var i=0; i<imgs.length; i++){
-            desc.push(name + ' - Lines running to this stop: ' + stations[ib].line);
+            name.push(stations[ib].name);
+            desc.push(name[0] + ' - Lines running to this stop: ' + stations[ib].line);
         }
         $.prettyPhoto.open(imgs,name,desc);
     });
