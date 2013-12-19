@@ -12,7 +12,7 @@ $(document).ready(function(){
     $('#subway').append(loopIt(stations));
     $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
     $('img[usemap]').rwdImageMaps();
-    var options = {imgSource = 'src'};
+    var options = {imgSource: 'src'};
     $('img').bezoom();
     $('a').on('click', function(e){
         e.preventDefault();
