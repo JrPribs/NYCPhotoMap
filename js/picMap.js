@@ -16,10 +16,9 @@ $(document).ready(function(){
         e.preventDefault();
         var ib = $(this).data('i');
         imgs = stations[ib].imgName;
-        var name = [];
+        var name = stations[ib].name;
         var desc = [];
         for(var i=0; i<imgs.length; i++){
-            name.push(stations[ib].name);
             desc.push(name + ' - Lines running to this stop: ' + stations[ib].line);
         }
         $.prettyPhoto.open(imgs,name,desc);
