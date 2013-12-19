@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    function loopIt(stations) {
+    function buildMap(stations) {
         var stationed = [];
         for(var i=0; i<stations.length; i++){
         var loc = stations[i].loc;
@@ -9,7 +9,14 @@ $(document).ready(function(){
         }
         return stationed.join('\n');
     }
-    $('#subway').append(loopIt(stations));
+    function makeInfo(inf){
+        var info = [];
+        for(var i=0; i<imgs.length; i++){
+            info.push(inf);
+        }
+        return info.join(',');
+    }
+    $('#subway').append(buildMap(stations));
     $('#zoom').bezoom();
     $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
     $('img[usemap]').rwdImageMaps();
@@ -17,12 +24,8 @@ $(document).ready(function(){
         e.preventDefault();
         var ib = $(this).data('i');
         var imgs = stations[ib].imgName;
-        var name = [];
-        var desc = [];
-        for(var i=0; i<imgs.length; i++){
-            name.push(stations[ib].name);
-            desc.push(name + ' - Lines running to this stop: ' + stations[ib].line);
-        }
+        var name = makeInfo(stations[ib].name);
+        var desc = makeInfo(name + ' - Lines running to this stop: ' + stations[ib].line);
         $.prettyPhoto.open(imgs,name,desc);
     });
 })
