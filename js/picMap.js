@@ -20,5 +20,5 @@ $(document).ready(function(){
         desc = name + ' - Lines running to this stop: ' + stations[ib].line;
         $.prettyPhoto.open(imgs,name,desc);
     });
-    $('#mainmap').addpowerzoom();
+    $('img#mainmap').addpowerzoom();
 })
