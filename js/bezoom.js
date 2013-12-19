@@ -21,7 +21,7 @@
 			height : 200,
 			width : 200,
 			titleSource : 'title',
-			imgSource : 'src',
+			imgSource : 'rel',
 			bgColor : '#5398EE',     	// background color for title
 			color : '#ffffff',       	// font color for title
 			size : '0.8em',          	// font size for title

@@ -16,9 +16,13 @@ $(document).ready(function(){
     $('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
-        name = stations[ib].name;
         imgs = stations[ib].imgName;
-        desc = name + ' - Lines running to this stop: ' + stations[ib].line;
+        name = [];
+        desc = [];
+        for(var i=0; i<imgs.length; i++){
+            name.push(stations[ib].name);
+            desc.push(name + ' - Lines running to this stop: ' + stations[ib].line);
+        }
         $.prettyPhoto.open(imgs,name,desc);
     });
 })
