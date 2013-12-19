@@ -10,15 +10,15 @@ jQuery(document).ready(function(){
         return stationed.join('\n');
     }
     jQuery('#subway').append(loopIt(stations));
-    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
-    $('img[usemap]').rwdImageMaps();
-    $('a').on('click', function(e){
+    jQuery("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
+    jQuery('img[usemap]').rwdImageMaps();
+    jQuery('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
         name = stations[ib].name;
         imgs = stations[ib].imgName;
         desc = name + ' - Lines running to this stop: ' + stations[ib].line;
-        $.prettyPhoto.open(imgs,name,desc);
+        jQuery.prettyPhoto.open(imgs,name,desc);
     });
-    $('img#mainmap').addpowerzoom();
+    jQuery('img#mainmap').addpowerzoom();
 })
