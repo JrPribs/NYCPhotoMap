@@ -1,4 +1,5 @@
-function loopIt(stations) {
+$(document).ready(function(){
+    function loopIt(stations) {
         var stationed = [];
         for(var i=0; i<stations.length; i++){
         var loc = stations[i].loc;
@@ -9,7 +10,6 @@ function loopIt(stations) {
         return stationed.join('\n');
     }
     $('#subway').append(loopIt(stations));
-$(document).ready(function(){
     $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
     $('img[usemap]').rwdImageMaps();
     $('a').on('click', function(e){
