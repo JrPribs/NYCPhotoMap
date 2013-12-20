@@ -10,17 +10,21 @@ $(document).ready(function(){
         return stationed.join('\n');
     }
     $('#subway').append(loopIt(stations));
-    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, allow_resize: false});
+    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, theme: dark_rounded; allow_resize: false});
     $('img[usemap]').rwdImageMaps();
     $('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
         imgs = stations[ib].imgName;
+        var line = stations[ib].line;
+        if (line == undefined) {
+            var line = " ";
+        }
         var name = [];
         var desc = [];
         for(var i=0; i<imgs.length; i++){
             name.push(stations[ib].name);
-            desc.push(name[0] + ' - MTA Lines: ' + stations[ib].line);
+            desc.push(name[0] + ' - MTA Lines: ' + line);
         }
         $.prettyPhoto.open(imgs,name,desc);
     });
