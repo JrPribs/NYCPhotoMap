@@ -10,8 +10,8 @@ $(document).ready(function(){
         return stationed.join('\n');
     }
     $('#subway').append(loopIt(stations));
-    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, theme: 'dark_rounded'});
-    $('img[usemap]').rwdImageMaps();
+    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, theme: 'dark_rounded', allow_resize: false});
+    
     $('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
