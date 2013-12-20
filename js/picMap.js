@@ -17,14 +17,15 @@ $(document).ready(function(){
         var ib = $(this).data('i');
         imgs = stations[ib].imgName;
         var line = stations[ib].line;
-        if (line == undefined) {
-            var line = " ";
-        }
         var name = [];
         var desc = [];
         for(var i=0; i<imgs.length; i++){
             name.push(stations[ib].name);
-            desc.push(name[0] + ' - MTA Lines: ' + line);
+            if (line == undefined) {
+                desc.push(name[0]);    
+            }else{
+                desc.push(name[0] + ' - MTA Lines: ' + line);
+            }
         }
         $.prettyPhoto.open(imgs,name,desc);
     });
