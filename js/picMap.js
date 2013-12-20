@@ -10,7 +10,7 @@ $(document).ready(function(){
         return stationed.join('\n');
     }
     $('#subway').append(loopIt(stations));
-    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, theme: dark_rounded; allow_resize: false});
+    $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, theme: 'dark_rounded', allow_resize: false});
     $('img[usemap]').rwdImageMaps();
     $('a').on('click', function(e){
         e.preventDefault();
