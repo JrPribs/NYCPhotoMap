@@ -15,45 +15,49 @@ var cheerio = require('cheerio');
 var moment = require('moment');
 var fs = require('fs');
 
-function getReq(line){
-	var scores = [];
-	var options = {
-		url: "http://www.mta.info" + line,
-		header: {
-			'User-Agent': 'request'
+function getLineStops() {
+	function getReq(line){
+		var scores = [];
+		var options = {
+			url: "http://www.mta.info" + line,
+			header: {
+				'User-Agent': 'request'
+			}
+		};
+		function getData(error, response, html){
+			if(!error && response.statusCode == 200) {
+				var $ = cheerio.load(html);
+				var station = {};
+				var preName = options.url.split('/');
+				var name = preName[preName.length -1];
+				var stops = [];
+				$('span.emphasized').each(function(){
+					aStop = []
+					aStop.push(this.text().trim());
+					aStop.push($(this).next().text().replace('\n',' ').trim());
+					var stop = aStop.join(" ");
+					stops.push(stop);
+					return stops;
+				});
+				var station = {
+					name: name,
+					stops: stops
+				};
+				console.log(station)
+				return station
+			}
 		}
-	};
-	function callBack(error, response, html){
-		if(!error && response.statusCode == 200) {
-			var $ = cheerio.load(html);
-			var station = {};
-			var preName = url.split('/');
-			var name = preName[preName.length -1];
-			var stops = [];
-			$('span.emphasized').each(function(){
-				var stop = $(this).text();
-				stops.push(stop);
-				return stops.join('\n');
-			});
-			var station = {
-				name: name,
-				stops: stops
-			};
-			console.log(station)
-		}
+	request(options, getData);
 	}
-	request(options, callBack);
+
+	//*[@id="contentbox"]/table[1]/tbody/tr[2]/td[2]/spacer/spacer/spacer/img
+	var lineStops = {};
+	for(var i=0; i<lineUrls.length; i++){
+		var thisLine = getReq(lineUrls[i]);
+		var pName = lineUrls[i].split('/');
+		lineStops[pName[pName.length -1]] = thisLine;
+	}
+	console.log(lineStops);
+return lineStops;
 }
-
-//*[@id="contentbox"]/table[1]/tbody/tr[2]/td[2]/spacer/spacer/spacer/img
-var lineStops = {};
-for(var i=0; i<lineUrls.length; i++){
-	var thisLine = getReq(lineUrls[i]);
-	var lineName = thisLine.name;
-	lineStops[lineName] = thisLine;
-}
-console.log(lineStops);
-
-
-
-	
+getLineStops();
