@@ -11,7 +11,7 @@ $(document).ready(function(){
     }
     $('#subway').append(loopIt(stations));
     $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, theme: 'dark_rounded', allow_resize: false});
-    
+    $('img[usemap]').rwdImageMaps();
     $('a').on('click', function(e){
         e.preventDefault();
         var ib = $(this).data('i');
