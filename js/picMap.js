@@ -24,7 +24,7 @@ $(document).ready(function(){
             if (line == undefined) {
                 desc.push(name[0]);    
             }else{
-                desc.push(name[0] + ' - MTA Lines: ' + line);
+                desc.push(name[0] + ' - MTA Line(s): ' + line);
             }
         }
         $.prettyPhoto.open(imgs,name,desc);

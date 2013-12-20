@@ -52,6 +52,7 @@ a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-i
 #pp_full_res .pp_inline{text-align:left}
 #pp_full_res .pp_inline p{margin:0 0 15px}
 div.ppt{color:#fff;display:none;font-size:1.5em;font-weight:bold;z-index:9999;margin:0 0 5px 15px;text-align:center;}
+div.pp_default .pp_details,div.light_rounded .pp_details,div.dark_rounded .pp_details,div.dark_square .pp_details,div.light_square .pp_details,div.facebook .pp_details{position:relative}
 div.dark_rounded .pp_top .pp_middle,div.dark_rounded .pp_content,div.dark_rounded .pp_bottom .pp_middle{background:none;}
 div.dark_rounded .currentTextHolder,div.dark_square .currentTextHolder{color:#c4c4c4}
 div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline{color:#fff}
