@@ -28,8 +28,8 @@ div.pp_default .pp_bottom .pp_left{background:url(../images/prettyPhoto/default/
 div.pp_default .pp_bottom .pp_middle{background:url(../images/prettyPhoto/default/sprite_x.png) bottom left repeat-x}
 div.pp_default .pp_bottom .pp_right{background:url(../images/prettyPhoto/default/sprite.png) -112px -127px no-repeat}
 div.pp_default .pp_loaderIcon{background:url(../images/prettyPhoto/default/loader.gif) center center no-repeat}
-div.dark_rounded .pp_top .pp_left{background:url(../images/prettyPhoto/dark_rounded/sprite.png) -88px -53px no-repeat}
-div.dark_rounded .pp_top .pp_right{background:url(../images/prettyPhoto/dark_rounded/sprite.png) -110px -53px no-repeat}
+div.dark_rounded .pp_top .pp_left{background:none;}
+div.dark_rounded .pp_top .pp_right{background:none;}
 div.dark_rounded .pp_content_container .pp_left{background:none;}
 div.dark_rounded .pp_content_container .pp_right{background:none;}
 div.dark_rounded .pp_next:hover{background:url(../images/prettyPhoto/dark_rounded/btnNext.png) center right no-repeat;cursor:pointer}
