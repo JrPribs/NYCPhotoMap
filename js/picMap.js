@@ -30,5 +30,4 @@ $(document).ready(function(){
         }
         $.prettyPhoto.open(imgs,name,desc);
     });
-    $('a#sl').css("cursor","hand");
 })
