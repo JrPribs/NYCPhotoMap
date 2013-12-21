@@ -4,13 +4,12 @@ $(document).ready(function(){
         for(var i=0; i<stations.length; i++){
         var loc = stations[i].loc;
         var name = stations[i].name;
-        stationed.push('<a href="#" id="sl" alt="' + name + '" title="' + name + 
+        stationed.push('<a href="#" style="cursor:hand !important; alt="' + name + '" title="' + name + 
             '" data-i="' + i + '"><area shape="circle" coords="' + loc + '" /></a>');
         }
         return stationed.join('\n');
     }
     $('#subway').append(loopIt(stations));
-
     $("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, theme: 'dark_rounded', allow_resize: false});
     $('img[usemap]').rwdImageMaps();
     $('a').on('click', function(e){
