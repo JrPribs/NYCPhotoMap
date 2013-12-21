@@ -66,7 +66,7 @@ html body{font-family:Helvetica, Arial, sans-serif;background:#FFF;}
 footer{position:relative;background:rgba(0,0,0,.5);color:rgba(255,255,255,.9);font-size:1em;text-align:center;border-radius:1em;margin:0 auto;}
 img[usemap]{border:none;margin:0 auto;height:auto;max-width:100%;width:auto;}
 header#head h1{color:rgba(0,0,0,.75);font-size:2em;text-align:center;padding:0;margin:1em auto;}
-a#sl{cursor:hand;}
-a#sl:hover{cursor:hand;}
-area{cursor:hand;}
-area:hover{cursor:hand;}
+a#sl{cursor:pointer;}
+a#sl:hover{cursor:pointer;}
+area{cursor:pointer;}
+area:hover{cursor:pointer;}
