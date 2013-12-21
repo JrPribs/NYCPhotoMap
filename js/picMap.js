@@ -4,7 +4,7 @@ $(document).ready(function(){
         for(var i=0; i<stations.length; i++){
         var loc = stations[i].loc;
         var name = stations[i].name;
-        stationed.push('<a href="#" alt="' + name + '" title="' + name + 
+        stationed.push('<a href="#" id="sl" alt="' + name + '" title="' + name + 
             '" data-i="' + i + '"><area shape="circle" coords="' + loc + '" /></a>');
         }
         return stationed.join('\n');
@@ -30,5 +30,4 @@ $(document).ready(function(){
         }
         $.prettyPhoto.open(imgs,name,desc);
     });
-    $('a area').on('hover', addClass('sublinks'));
 })

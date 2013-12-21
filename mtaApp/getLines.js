@@ -35,7 +35,7 @@ function getLineStops() {
 					aStop = []
 					aStop.push(this.text().trim());
 					aStop.push($(this).next().text().replace('\n',' ').trim());
-					var stop = aStop.join(" ");
+					var stop = aStop
 					stops.push(stop);
 					return stops;
 				});
