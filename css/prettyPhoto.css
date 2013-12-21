@@ -68,4 +68,4 @@ footer{position:relative;background:rgba(0,0,0,.5);color:rgba(255,255,255,.9);fo
 img[usemap]{border:none;margin:0 auto;height:auto;max-width:100%;width:auto;}
 header#head h1{color:rgba(0,0,0,.75);font-size:2em;text-align:center;padding:0;margin:1em auto;}
 a#sl:hover {cursor:hand;}
-a:-webkit-any-link {cursor:hand;}
+a:-webkit-any-link {cursor:hand !important;}
