@@ -25,7 +25,7 @@ var stations = [
     { loc: "684,1088,15", name: "231 st", imgName: [ bronx + "231_street_1.jpg", bronx + "231_street_1-2.jpg"]},
     { loc: "669,1127,15", name: "Marble Hill/ 225 st", imgName: [ bronx + "225_street_1.jpg", bronx + "225_street_1-2.jpg"]},
     { loc: "896,1153,15", name: "Kingsbridge Rd", imgName: [ bronx + "kingsbridge_road_4.jpg"]},
-    { loc: "927,1147,15", name: "Kingsbridge Rd", imgName: [ bronx + "kingsbridge_road_b_d-2.jpg", bronx + "kingsbridge_road_b_d-3.jpg", bronx + "kingsbridge_road_b_d.jpg"},
+    { loc: "927,1147,15", name: "Kingsbridge Rd", imgName: [ bronx + "kingsbridge_road_b_d-2.jpg", bronx + "kingsbridge_road_b_d-3.jpg", bronx + "kingsbridge_road_b_d.jpg"]},
     { loc: "923,1204,15", name: "Fordham Rd", imgName: [ bronx + "fordham_road_b_d.jpg", bronx + "fordham_road_b_d-2.jpg"]},
     { loc: "1217,873,15", name: "Eastchester/ Dyre Av", imgName: [ bronx + "dyre_avenue_5.jpg"]},
     { loc: "1216,913,15", name: "Baychester Av", imgName: [ bronx + "baychester_avenue_5.jpg"]},
