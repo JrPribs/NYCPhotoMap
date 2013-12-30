@@ -287,7 +287,7 @@ var stations = [
     { loc: "1377,3003,16", name: "Smith/ 9 Sts", line: ["F", "G"], imgName: [brooklyn + "smith_9_streets_f_g.jpg"]},
     { loc: "1344,2970,17", name: "Carroll St", line: ["F", "G"], imgName: [brooklyn + "carroll_street_f_g.jpg", brooklyn + "carroll_street_f_g-2.jpg"]},
     { loc: "1340,2934,16", name: "Bergen St", line: ["F", "G"], imgName: [brooklyn + "bergen_street_f_g-4.jpg", brooklyn + "bergen_street_f_g-2.jpg", brooklyn + "bergen_street_f_g-3.jpg", brooklyn + "bergen_street_f_g.jpg"]},
-    { loc: "1439,2952,16", name: "Union St", line: ["R"], imgName: [brooklyn + "union_street_r.jpg", brooklyn + "union_street_r-2.jpg"]}
+    { loc: "1439,2952,16", name: "Union St", line: ["R"], imgName: [brooklyn + "union_street_r.jpg", brooklyn + "union_street_r-2.jpg"]},
     { loc: "1443,2899,16", name: "Atlantic Av-Pacific St", line: ["D", "N", "R"], imgName: [brooklyn + "atlantic_avenue_pacific_street_d_n_r.jpg"]},
     { loc: "1483,2879,16", name: "Atlantic Av", line: ["2", "3", "4", "5", "B", "Q", "N", "R", "D"], imgName: [brooklyn + "atlantic_avenue_barclays_center_2_3_4_5_b_q_n_r_d-2.jpg", brooklyn + "atlantic_avenue_b_q_2_3_4_5.jpg"]},
     { loc: "1527,2913,16", name: "Bergen St", line: ["2", "3"], imgName: [brooklyn + "bergen_street_2_3-3.jpg", brooklyn + "bergen_street_2_3.jpg"]},
