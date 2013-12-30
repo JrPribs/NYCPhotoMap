@@ -70,3 +70,4 @@ a#sl{cursor:pointer;display:block;}
 a#sl:hover{cursor:pointer;display:block;}
 area{cursor:pointer;display:block;}
 area:hover{cursor:pointer;display:block;}
+h1.post_title,h1.page_title {float:none; margin: 1em auto; text-align: center;}
